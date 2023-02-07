@@ -60,7 +60,7 @@ const router = Router();
  *             schema:
  *               $ref: '#/components/schemas/loginResponse'
  *       400:
- *         description: Something wrong
+ *         description: User not found
  *         content:
  *           application/json:
  *             schema:
@@ -68,7 +68,7 @@ const router = Router();
  *               properties:
  *                 message:
  *                   type: string
- *                   example: Something wrong
+ *                   example: User not found
  *       401:
  *         description: Unauthorized
  *         content:
@@ -78,11 +78,11 @@ const router = Router();
  *               properties:
  *                 message:
  *                   type: string
- *                   example: Bad credentials
+ *                   example: Unauthorized
  *
  */
 
 router.post('/register', register);
 router.post('/login', login);
 
-module.exports = router; // ahorita lo usamos en app
+module.exports = router; 

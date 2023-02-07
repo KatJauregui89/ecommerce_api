@@ -3,7 +3,7 @@ const swaggerUi = require('swagger-ui-express');
 require('dotenv').config();
 
 const options = {
-    apis: ['./src/routes/auth.routes.js', './src/models/users.models.js'],
+    apis: ['./src/routes/auth.routes.js', './src/models/users.models.js', './src/models/cart.models.js'],
     definition: {
         openapi: "3.0.0",
         info:{
